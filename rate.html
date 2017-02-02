@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mastercard Rating</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<div class="page-header">
+    <h1 class="text-center">Mastercard <small>Youths party</small></h1>
+</div>
+
+<!-- Rating - START -->
+<div class="container" id="container1">
+    <!-- <div class="col-md-4"></div> -->
+
+    <div class="col-md-9 ">
+        <div class="panel panel-default ">
+            <div class="panel-heading text-center">
+                <h4 class="text-center">Who Can Be Leader<span class="glyphicon glyphicon-saved pull-right"></span></h4>
+            </div>
+            <div class="panel-body text-center">
+                <p class="lead">
+                    <strong>candidates</strong>
+                </p>
+            </div>
+            <ul class="columns list-group list-group-flush text-center" data-columns="5">
+                <li class="list-group-item text-center">
+                    <div class="skillLineDefault "> 
+                    <div  class="skill pull-left text-center" >Siva</div>      
+                    <div ><img src="images/siva.jpg" class="img-circle" alt="Siva" width="204" height="136">
+                        
+                        <div class="rating" id="rate1"></div>
+                        </div>
+                    </div>
+                </li>
+                 <li class="list-group-item text-center">
+                    <div class="skillLineDefault">
+                        <div class="skill pull-left text-center">Gopi</div>
+                         <div ><img src="images/gopi.jpg" class="img-circle" alt="gopi" width="204" height="136">
+                        <div class="rating" id="rate5"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item text-center">
+                    <div class="skillLineDefault">
+                        <div class="skill pull-left text-center">Edward</div>
+                         <div ><img src="images/edward.jpg" class="img-circle" alt="edward" width="204" height="136">
+                        <div class="rating" id="rate2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item text-center">
+                    <div class="skillLineDefault">
+                        <div class="skill pull-left text-center">Siraj</div>
+                         <div ><img src="images/siraj.jpg" class="img-circle" alt="siraj" width="204" height="136">
+                        <div class="rating" id="rate3"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item text-center">
+                    <div class="skillLineDefault">
+                        <div class="skill pull-left text-center">Lalith</div>
+                         <div ><img src="images/lalith.jpg" class="img-circle" alt="lalith" width="204" height="136">
+                        <div class="rating" id="rate4"></div></div>
+                    </div>
+                </li>
+                <li class="list-group-item text-center">
+                    <div class="skillLineDefault">
+                        <div class="skill pull-left text-center">Rhoit</div>
+                         <div ><img src="images/rohith.jpg" class="img-circle" alt="Rohit" width="204" height="136">
+                        <div class="rating" id="rate6"></div></div>
+                    </div>
+                </li>
+                <li class="list-group-item text-center">
+                    <div class="skillLineDefault">
+                        <div class="skill pull-left text-center">Naveen</div>
+                         <div ><img src="images/naveen.jpg" class="img-circle" alt="naveen" width="204" height="136">
+                        <div class="rating" id="rate7"></div></div>
+                    </div>
+                </li>
+                <li class="list-group-item text-center">
+                    <div class="skillLineDefault">
+                        <div class="skill pull-left text-center">Mani</div>
+                         <div ><img src="images/mani.jpg" class="img-circle" alt="mani" width="204" height="136">
+                        <div class="rating" id="rate8"></div></div>
+                    </div>
+                </li>
+                <li class="list-group-item text-center">
+                    <div class="skillLineDefault">
+                        <div class="skill pull-left text-center">Kannapan</div>
+                         <div ><img src="images/kannapan.jpg" class="img-circle" alt="kannapan" width="204" height="136">
+                        <div class="rating" id="rate9"></div></div>
+                    </div>
+                </li>
+ 		<li class="list-group-item text-center">
+                    <div class="skillLineDefault">
+                        <div class="skill pull-left text-center">Jhonshi</div>
+                         <div ><img src="images/jhonsi.jpg" class="img-circle" alt="Jhonshi" width="204" height="136">
+                        <div class="rating" id="rate10"></div></div>
+                    </div>
+                </li>
+                <li class="list-group-item text-center">
+                    <div class="skillLineDefault">
+                        <div class="skill pull-left text-center">Jenefar</div>
+                         <div ><img src="images/jenefar.jpg" class="img-circle" alt="Jenefar" width="204" height="136">
+                        <div class="rating" id="rate11"></div></div>
+                    </div>
+                </li>
+                <li class="list-group-item text-center">
+                    <div class="skillLineDefault">
+                        <div class="skill pull-left text-center">Hari</div>
+                         <div ><img src="images/hari.jpg" class="img-circle" alt="Hari" width="204" height="136">
+                        <div class="rating" id="rate12"></div></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="panel-footer text-center">
+                <button type="button" class="btn btn-primary btn-lg ">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #container1 {
+        margin-bottom: 120px;
+        padding:20px;
+        background-color:#f5f5f5;
+    }
+
+    .rating {
+        margin-left: 10px;
+       
+    }
+
+    div.skill {
+        background: #9cb85c;
+        border-radius: 8px;
+        color: white;
+        font-weight: bold;
+        padding: 3px 4px;
+        width: 130px;
+        margin-left: 10px;
+        
+    }
+
+    .skillLine {
+        display: inline-block;
+        width: 100%;
+        min-height: 90px;
+        padding: 3px 4px;
+    }
+
+    skillLineDefault {
+        padding: 3px 4px;
+    }
+    ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+</style>
+
+<!-- you need to include the shieldui css and js assets in order for the charts to work -->
+<link rel="stylesheet" type="text/css" href="https://www.shieldui.com/shared/components/latest/css/light/all.min.css" />
+<script type="text/javascript" src="https://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+
+<script type="text/javascript">
+    initializeRatings();
+
+    function initializeRatings() {
+        $('#rate1').shieldRating({
+            max: 7,
+            step: 0.1,
+            value: 6.3,
+            markPreset: false
+        });
+        $('#rate2').shieldRating({
+            max: 7,
+            step: 0.1,
+            value: 6,
+            markPreset: false
+        });
+        $('#rate3').shieldRating({
+            max: 7,
+            step: 0.1,
+            value: 4.5,
+            markPreset: false
+        });
+        $('#rate4').shieldRating({
+            max: 7,
+            step: 0.1,
+            value: 5,
+            markPreset: false
+        });
+        $('#rate5').shieldRating({
+            max: 7,
+            step: 0.1,
+            value: 6.5,
+            markPreset: false
+        });
+        $('#rate6').shieldRating({
+            max: 7,
+            step: 0.1,
+            value: 2.5,
+            markPreset: false
+        });
+        $('#rate7').shieldRating({
+            max: 7,
+            step: 0.1,
+            value: 2.5,
+            markPreset: false
+        });
+        $('#rate8').shieldRating({
+            max: 7,
+            step: 0.1,
+            value: 7,
+            markPreset: false
+        });
+        $('#rate9').shieldRating({
+            max: 7,
+            step: 0.1,
+            value: 7,
+            markPreset: false
+        });
+        $('#rate10').shieldRating({
+            max: 7,
+            step: 0.1,
+            value: 2.5,
+            markPreset: false
+        });
+        $('#rate11').shieldRating({
+            max: 7,
+            step: 0.1,
+            value: 3.5,
+            markPreset: false
+        });
+        $('#rate12').shieldRating({
+            max: 7,
+            step: 0.1,
+            value: 3.5,
+            markPreset: false
+        });
+    }
+</script>
+
+<!-- Rating - END -->
+
+</div>
+
+</body>
+</html>
