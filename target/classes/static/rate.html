@@ -2,26 +2,30 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Mastercard Rating</title>
+    <title>General Rating</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+       <link rel="icon" href="images/siva.jpg">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
 
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body >
 
 <div class="container">
-
+<p id="demo"></p>
 <div class="page-header">
-    <h1 class="text-center">Mastercard <small>Youths party</small></h1>
+    <h1 class="text-center">General <small>Youths party</small></h1>
 </div>
-
+<div>
+            <p class="greeting-id"  align="left">welcome : </p>
+          <p>Current Time :<span class="greeting-date" ></span></p>
+        </div>
+        
 <!-- Rating - START -->
 <div class="container" id="container1">
-    <!-- <div class="col-md-4"></div> -->
+   
 
     <div class="col-md-9 ">
         <div class="panel panel-default ">
@@ -45,7 +49,7 @@
                 </li>
                  <li class="list-group-item text-center">
                     <div class="skillLineDefault">
-                        <div class="skill pull-left text-center">Gopi</div>
+                        <div class="skill pull-left text-center">Ramesh</div>
                          <div ><img src="images/gopi.jpg" class="img-circle" alt="gopi" width="204" height="136">
                         <div class="rating" id="rate5"></div>
                         </div>
@@ -53,7 +57,7 @@
                 </li>
                 <li class="list-group-item text-center">
                     <div class="skillLineDefault">
-                        <div class="skill pull-left text-center">Edward</div>
+                        <div class="skill pull-left text-center">shan</div>
                          <div ><img src="images/edward.jpg" class="img-circle" alt="edward" width="204" height="136">
                         <div class="rating" id="rate2"></div>
                         </div>
@@ -125,7 +129,7 @@
                 </li>
             </ul>
             <div class="panel-footer text-center">
-                <button type="button" class="btn btn-primary btn-lg ">
+                <button type="button"  class="btn btn-primary btn-lg "onclick="validate()">
                     Submit
                 </button>
             </div>
@@ -254,11 +258,49 @@
             markPreset: false
         });
     }
+    $(document).ready(function() {
+    	autoRefresh_div()
+        $.ajax({
+            url: "http://PC328708:8090/test"
+        }).then(function(data) {
+           $('.greeting-id').append("<strong>"+data.greeting+"</strong>");
+          
+        });
+    });
+     
+    	 function autoRefresh_div()
+ {
+        $.ajax({
+            url: "http://PC328708:8090/currentDate"
+        }).then(function(data) {
+           $('.greeting-date').html("<strong style=color:green>"+data.currentTime+"</strong>");
+           
+        });  
+ }
+     
+  
+        
+  
+    
+     setInterval('autoRefresh_div()', 4000);
+     function validate()
+     {
+    	 alert("Thanks for your vote")
+     window.location.href ="index.html";
+     }
 </script>
 
 <!-- Rating - END -->
 
 </div>
+
+
+ 
+ 
+
+
+
+
 
 </body>
 </html>
